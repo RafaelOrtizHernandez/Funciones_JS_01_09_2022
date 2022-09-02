@@ -1,10 +1,10 @@
 
 
-let r = Number(prompt("Ingrese el valor del radio", 4));
+let a = Number(prompt("Ingrese el valor de la arista", 3));
 
-function formulaAreaEsfera(radio, imagen="imagenes/esfera.png"){
+function formulaVolumenCubo(arista, imagen="imagenes/cubo.png"){
     document.body.insertAdjacentHTML("afterbegin", `<img src="${imagen}">`);
-    return 4*Math.PI*Math.pow(radio,2);
+    return Math.pow(arista, 3);
 }
 
-console.log(`El Area de la Esfera es: ${formulaAreaEsfera(r)}`);
+console.log(`El Volumen del Cubo es: ${formulaVolumenCubo(a)}`);
