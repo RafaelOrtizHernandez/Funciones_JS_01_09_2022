@@ -1,10 +1,10 @@
 
 
 let r = Number(prompt("Ingrese el valor del radio", 4));
-let g = Number(prompt("Ingrese el valor de la generatriz", 5));
-function formulaAreaLCono(radio, generatiz, imagen="imagenes/cono.png"){
+
+function formulaAreaEsfera(radio, imagen="imagenes/esfera.png"){
     document.body.insertAdjacentHTML("afterbegin", `<img src="${imagen}">`);
-    return (Math.PI*radio)*generatiz;
+    return 4*Math.PI*Math.pow(radio,2);
 }
 
-console.log(`El Area Lateral del Cono es: ${formulaAreaLCono(r, g)}`);
+console.log(`El Area de la Esfera es: ${formulaAreaEsfera(r)}`);
