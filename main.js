@@ -1,9 +1,10 @@
 
 
-let D = Number(prompt("Ingrese el valor de la Diagonal Mayor", 4));
-let d = Number(prompt("Ingrese el valor de la Diagonal menor", 5));
-function formulaAreaRombo(DMayor, dmenor, imagen="imagenes/rombo.png"){
+let B = Number(prompt("Ingrese el valor de la Base Mayor", 4));
+let b = Number(prompt("Ingrese el valor de la base menor", 5));
+let h = Number(prompt("Ingrese el valor de la altura", 5));
+function formulaAreaTrapecio(BMayor, bmenor, altura, imagen="imagenes/trapecio.png"){
     document.body.insertAdjacentHTML("afterbegin", `<img src="${imagen}">`);
-    return (DMayor * dmenor)/2;
+    return ((BMayor + bmenor)/2)*altura;
 }
-console.log(`El Area del Rombo es: ${formulaAreaRombo(D, d)}`);
+console.log(`El Area del Trapecio es: ${formulaAreaTrapecio(B, b, h)}`);
