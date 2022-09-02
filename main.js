@@ -1,11 +1,11 @@
 
 
-let r = Number(prompt("Ingrese el radio de la base", 4));
+let A = Number(prompt("Ingrese el área de la base", 4));
 let h = Number(prompt("Ingrese la altura", 2));
 
-function formulaVolumenCilindro(radiobase, altura, imagen="imagenes/cilindro.png"){
+function formulaVolumenCono(areabase, altura, imagen="imagenes/cono.png"){
     document.body.insertAdjacentHTML("afterbegin", `<img src="${imagen}">`);
-    return Math.PI*Math.pow(radiobase,2)*altura;
+    return 1/3*(areabase)*altura;
 }
 
-console.log(`El Volumen del Cilindro es: ${formulaVolumenCilindro(r,h)}`);
+console.log(`El Volumen del Cono es: ${formulaVolumenCono(A,h)}`);
