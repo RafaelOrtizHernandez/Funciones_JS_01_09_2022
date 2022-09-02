@@ -1,10 +1,9 @@
 
 
-let B = Number(prompt("Ingrese el valor de la Base Mayor", 4));
-let b = Number(prompt("Ingrese el valor de la base menor", 5));
-let h = Number(prompt("Ingrese el valor de la altura", 5));
-function formulaAreaTrapecio(BMayor, bmenor, altura, imagen="imagenes/trapecio.png"){
+let P = Number(prompt("Ingrese el valor del Perímetro", 4));
+let a = Number(prompt("Ingrese el valor de la apotema", 5));
+function formulaAreaPoligono(perimetro, apotema, imagen="imagenes/pregular.png"){
     document.body.insertAdjacentHTML("afterbegin", `<img src="${imagen}">`);
-    return ((BMayor + bmenor)/2)*altura;
+    return (perimetro/2)*apotema;
 }
-console.log(`El Area del Trapecio es: ${formulaAreaTrapecio(B, b, h)}`);
+console.log(`El Area del Poligono Regular es: ${formulaAreaPoligono(P, a)}`);
