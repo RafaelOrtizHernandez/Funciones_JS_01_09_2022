@@ -1,12 +1,9 @@
 
 
-let r = Number(prompt("Ingrese el valor del radio", 2));
-function formulaAreaCirculo(radio, imagen="imagenes/circulo.png"){
+let l = Number(prompt("Ingrese el valor del lado", 4));
+function formulaAreaCuadrado(lado, imagen="imagenes/cuadrado.png"){
     document.body.insertAdjacentHTML("afterbegin", `<img src="${imagen}">`);
-    return Math.PI*r*r;
+    return Math.pow(lado, 2);
 }
-function formulaPerimetroCirculo(radio){
-    return 2*Math.PI*r;
-}
-console.log(`El Area del Circulo es: ${formulaAreaCirculo(r)}`);
-console.log(`El Perimetro del Circulo es: ${formulaPerimetroCirculo(r)}`);
+
+console.log(`El Area del Cuadrado es: ${formulaAreaCuadrado(l)}`);
